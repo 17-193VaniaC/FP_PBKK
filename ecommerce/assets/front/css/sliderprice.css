@@ -34,7 +34,7 @@ h1 p
 }
 #amount
 {
-	color:#990000; //DF7401
+	color:#990000; /*DF7401*/
 	font-size:20px;
 	font-weight:bold;
 }
