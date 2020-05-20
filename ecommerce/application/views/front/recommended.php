@@ -9,7 +9,7 @@
 						<div class="single-products">
 							<div class="productinfo text-center">
 								<img src="<?php echo base_url()?>assets/front/images/home/product7.jpg" alt="" />
-								<h2>50000</h2>
+								<h2>Rp 50000</h2>
 								<p>Beras</p>
 								<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							</div>
@@ -22,7 +22,7 @@
 						<div class="single-products">
 							<div class="productinfo text-center">
 								<img src="<?php echo base_url()?>assets/front/images/home/product8.jpg" alt="" />
-								<h2>25000</h2>
+								<h2>Rp 25000</h2>
 								<p>Minyak Goreng</p>
 								<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							</div>
@@ -35,7 +35,7 @@
 						<div class="single-products">
 							<div class="productinfo text-center">
 								<img src="<?php echo base_url()?>assets/front/images/home/product9.jpg" alt="" />
-								<h2>45000</h2>
+								<h2>Rp 45000</h2>
 								<p>Susu Bayi</p>
 								<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							</div>
@@ -50,7 +50,7 @@
 						<div class="single-products">
 							<div class="productinfo text-center">
 								<img src="<?php echo base_url()?>assets/front/images/home/sarden.jpg" alt="" />
-								<h2>10000</h2>
+								<h2>Rp 10000</h2>
 								<p>Sarden ABC</p>
 								<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							</div>
@@ -76,7 +76,7 @@
 						<div class="single-products">
 							<div class="productinfo text-center">
 								<img src="<?php echo base_url()?>assets/front/images/home/listerine.jpg" alt="" />
-								<h2>25000</h2>
+								<h2>Rp 25000</h2>
 								<p>Listerine</p>
 								<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							</div>
