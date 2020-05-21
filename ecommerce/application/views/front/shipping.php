@@ -35,14 +35,7 @@
 									<input type="text" placeholder="Address*" name="cus_address">
 									<input type="text" placeholder="City" name="cus_city">
 									<select name="cus_country">
-										<option>-- Country --</option>
-										<option>United States</option>
-										<option>Bangladesh</option>
-										<option>UK</option>
-										<option>India</option>
-										<option>Pakistan</option>
-										<option>Ucrane</option>
-										<option>Canada</option>
+										<option>Indonesia</option>
 										<option>Dubai</option>
 									</select>
 									<input type="text" placeholder="Zip" name="cus_zip">

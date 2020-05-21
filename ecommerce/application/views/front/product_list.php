@@ -16,7 +16,7 @@
 				<div class="product-overlay">
 					<div class="overlay-content">			
 					<form action="<?php echo base_url()?>add-to-cart"  method="post">
-							<h2>$<?php echo $value->pro_price?></h2><!--This is under form because style factor when product price move to form then style is not formating-->
+							<h2>Rp <?php echo $value->pro_price?></h2><!--This is under form because style factor when product price move to form then style is not formating-->
 							<p><?php echo $value->pro_title?></p>
 							<input type="hidden" value="1" name="qty"/>
 							<input type="hidden" value="<?php echo $value->pro_id?>" name="pro_id"/>

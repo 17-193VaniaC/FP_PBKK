@@ -35,15 +35,7 @@
 									<input type="text" placeholder="Address*" name="cus_address" value="<?php echo $cus_info->cus_address?>">
 									<input type="text" placeholder="City" name="cus_city" value="<?php echo $cus_info->cus_city?>">
 									<select name="cus_country" value="<?php echo $cus_info->cus_country?>">
-										<option>-- Country --</option>
-										<option value="United_States" >United States</option>
-										<option value="Bangladesh">Bangladesh</option>
-										<option value="UK">UK</option>
-										<option value="India">India</option>
-										<option value="Pakistan">Pakistan</option>
-										<option value="Ucrane">Ucrane</option>
-										<option value="Canada">Canada</option>
-										<option value="Dubai">Dubai</option>
+										<option>Indonesia</option>
 									</select>
 									<input type="text" placeholder="Zip" name="cus_zip" value="<?php echo $cus_info->cus_zip?>">
 									Shipping Same As Billing

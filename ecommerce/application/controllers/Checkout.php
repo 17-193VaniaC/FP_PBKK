@@ -73,7 +73,6 @@ class Checkout extends CI_Controller {
 		 $this->form_validation->set_rules('cus_mobile', 'Mobile Number', 'trim|required');
 		 $this->form_validation->set_rules('cus_address', 'Address', 'trim|required|min_length[5]');
 		 $this->form_validation->set_rules('cus_city', 'City', 'trim|required');
-		 $this->form_validation->set_rules('cus_zip', 'Zip', 'trim|required|min_length[4]');
 		if($this->form_validation->run()){
 			$this->CheckoutModel->upate_billing_by_id();
 			//$shipping_id = $this->session->userdata("shipping_id");
@@ -109,7 +108,6 @@ class Checkout extends CI_Controller {
 		$this->form_validation->set_rules('cus_mobile', 'Mobile Number', 'trim|required');
 		 $this->form_validation->set_rules('cus_address', 'Address', 'trim|required|min_length[5]');
 		 $this->form_validation->set_rules('cus_city', 'City', 'trim|required');
-		 $this->form_validation->set_rules('cus_zip', 'Zip', 'trim|required|min_length[4]');
 		 $this->form_validation->set_rules('cus_email', 'Email', 'trim|required|valid_email');
 		 $this->form_validation->set_rules('cus_name', 'Email', 'trim|required');
 			if($this->form_validation->run()){

@@ -34,7 +34,7 @@
 								<h4><a href=""><?php echo $items['name']?></a></h4>
 							</td>
 							<td class="cart_price">
-								<p>$<?php echo $items['price']?></p>
+								<p>Rp <?php echo $items['price']?></p>
 							</td>
 							<td class="cart_quantity">
 								<div class="cart_quantity_button">
@@ -50,7 +50,7 @@
 								</div>
 							</td>
 							<td class="cart_total">
-								<p class="cart_total_price">$<?php echo $items['subtotal']?></p>
+								<p class="cart_total_price">Rp <?php echo $items['subtotal']?></p>
 							</td>
 							<td class="cart_delete">
 								<a class="cart_quantity_delete" href="<?php echo base_url()?>delete-to-cart/<?php echo $items['rowid']?>"><i class="fa fa-times"></i></a>
@@ -67,98 +67,33 @@
 	<section id="do_action">
 		<div class="container">
 			<div class="heading">
-				<h3>What would you like to do next?</h3>
-				<p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+				<h3>Pembayaran</h3>
 			</div>
 			<div class="row">
-				<div class="col-sm-6">
-					<div class="chose_area">
-						<ul class="user_option">
-							<li>
-								<input type="checkbox">
-								<label>Use Coupon Code</label>
-							</li>
-							<li>
-								<input type="checkbox">
-								<label>Use Gift Voucher</label>
-							</li>
-							<li>
-								<input type="checkbox">
-								<label>Estimate Shipping & Taxes</label>
-							</li>
-						</ul>
-						<ul class="user_info">
-							<li class="single_field">
-								<label>Country:</label>
-								<select>
-									<option>United States</option>
-									<option>Bangladesh</option>
-									<option>UK</option>
-									<option>India</option>
-									<option>Pakistan</option>
-									<option>Ucrane</option>
-									<option>Canada</option>
-									<option>Dubai</option>
-								</select>
-								
-							</li>
-							<li class="single_field">
-								<label>Region / State:</label>
-								<select>
-									<option>Select</option>
-									<option>Dhaka</option>
-									<option>London</option>
-									<option>Dillih</option>
-									<option>Lahore</option>
-									<option>Alaska</option>
-									<option>Canada</option>
-									<option>Dubai</option>
-								</select>
-							
-							</li>
-							<li class="single_field zip-field">
-								<label>Zip Code:</label>
-								<input type="text">
-							</li>
-						</ul>
-						<a class="btn btn-default update" href="">Get Quotes</a>
-						<a class="btn btn-default check_out" href="">Continue</a>
-					</div>
-				</div>
 				<div class="col-sm-6">
 					<div class="total_area">
 						<ul>
 							<?php 
 								$cart_total = $this->cart->total();
 							?>
-							<li>Cart Sub Total <span>$<?php echo $cart_total;?></span></li>
-							<?php
-								$tax = ($cart_total*2)/100;
-							?>
-							<li>Eco Tax 2% <span>$<?php echo $tax?></span></li>
+							<li>Cart Sub Total <span>Rp <?php echo $cart_total;?></span></li>
 							<!-- Shipping Cost Dependend Quantity, price, buyer distance etc -->
 							<?php
 								$shiping = "0";
-								if($cart_total>0 && $cart_total<49){
-									$shiping = 0;
-								}elseif($cart_total>50 && $cart_total<98){
-									$shiping = 2;
-								}elseif($cart_total>99 && $cart_total<198){
-									$shiping = 5;
-								}elseif($cart_total>199){
-									$shiping = 10;
-								}elseif($cart_total<0){
-									$shiping = 0;
+								if($cart_total>0 && $cart_total<100000){
+									$shiping = 5000;
+								}elseif($cart_total>100000){
+									$shiping = 10000;
 								}
 							?>
-							<li>Shipping Cost <span>$<?php echo $shiping?></span></li>
-							<?php $g_total = $cart_total+$tax+$shiping;?>
+							<li>Shipping Cost <span>Rp <?php echo $shiping?></span></li>
+							<?php $g_total = $cart_total+$shiping;?>
 							<li>Total <span>
 								<?php
 									$gdata = array();
 									$gdata['g_total'] = $g_total;
 									$this->session->set_userdata($gdata);
-							 		echo "$$g_total";
+							 		echo "Rp $g_total";
 							 	?>
 							 </span></li>
 						</ul>

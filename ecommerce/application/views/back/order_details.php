@@ -21,8 +21,6 @@
                           <h4><b>Mobie:</b><?php echo $cus_info->cus_mobile?></h4>
                           <h4><b>Address:</b><?php echo $cus_info->cus_address?></h4>
                           <h4><b>City:</b><?php echo $cus_info->cus_city?></h4>
-                          <h4><b>Country:</b><?php echo $cus_info->cus_country?></h4>
-                          <h4><b>Zip:</b><?php echo $cus_info->cus_zip?></h4>
                         </div>
                     </div>
                 </div>
@@ -37,9 +35,6 @@
                           <h4><b>Mobie:</b><?php echo $ship_info->cus_mobile?></h4>
                           <h4><b>Address:</b><?php echo $ship_info->cus_address?></h4>
                           <h4><b>City:</b><?php echo $ship_info->cus_city?></h4>
-                          <h4><b>Country:</b><?php echo $ship_info->cus_country?></h4>
-                          <h4><b>Zip:</b><?php echo $ship_info->cus_zip?></h4>
-                          <h4><b>Fax:</b><?php echo $ship_info->cus_fax?></h4>
                         </div>
                     </div>
                 </div>
@@ -86,7 +81,7 @@
                                             
 
                                             <td><?php echo $order->sales_quantity?></td>
-                                            <td>$<?php echo $order->product_price;?></td>
+                                            <td>Rp <?php echo $order->product_price;?></td>
                                             <td class="center"><?php echo $order->sales_quantity * $order->product_price;?></td>  
 
                                         </tr>
@@ -112,9 +107,9 @@
                            Amount Calcutation
                         </div>
                         <div class="panel-body">
-                           <h4><strong>Sub-Total: </strong>$<?php echo $total?></h4>
-                           <h4><strong>Vat 5%: </strong>$<?php echo $vat = $total*5/100;?></h4>
-                           <h4><strong>Grand-Total: </strong>$<?php echo $vat+$total;?></h4>
+                           <h4><strong>Sub-Total: </strong>Rp <?php echo $total?></h4>
+                           <h4><strong>Vat 5%: </strong>Rp <?php echo $vat = $total*5/100;?></h4>
+                           <h4><strong>Grand-Total: </strong>Rp <?php echo $vat+$total;?></h4>
                         </div>
                         <!-- <div class="panel-footer">
                             Panel Footer
